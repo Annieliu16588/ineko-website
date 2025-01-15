@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+	  <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+	  <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	  <link rel="stylesheet" href="jqueryui/style.css">
+	  <script>
+	  $(function() {
+	    $( "#accordion" ).accordion();
+	  });
+	  </script>
+	
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'>
+		</script>
+		
+			<script type='text/javascript'>
+						var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/12zYNlTz1rHsbR-xPLA7-l5fibEAeWQ_6jIGclnXY3NU/pubhtml';
+	
+					<!-- 利用Tabletop.JS讀取Google Sheet https://github.com/jsoma/tabletop -->
+					  // 於Google Spreadsheet建立的範例資料為 https://docs.google.com/spreadsheets/d/e/2PACX-1vR9LivzlVjV3Mp9EOw0rCh46tDacBY6uQ8AT4k6ObLecvL8P-BpgKza9IOyGfFkP3tEdNSereSt8wxT/pubhtml
+
+					  function init() {
+						Tabletop.init( { key: publicSpreadsheetUrl,
+										 callback: showInfo,
+										 simpleSheet: true } )
+					  }
+	  
+					  function showInfo(data, tabletop) {
+						alert('Successfully processed!')
+						console.log(data);
+		
+						var str = "";
+						
+						
+						for (var t=0; t<data.length; t++) {
+					    str += 
+							'<button class="accordion">'
+							+data[t].question+
+							'</button>'+
+		                    '<div class="panel">'+
+		                    data[t].answer+
+							'</div>';
+					 
+					 }
+		
+						document.getElementById("demo").innerHTML = str;
+
+					  }
+
+					  window.addEventListener('DOMContentLoaded', init)
+					</script>
+					
+		<head>
+		
+
+</head>
+
+<body>
+	
+	<div id ="accordion">
+	<div id="demo">
+
+		</div>
+	</div>
+		
+
+		<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+		  acc[i].addEventListener("click", function() {
+		    this.classList.toggle("active");
+		    var panel = this.nextElementSibling;
+		    if (panel.style.maxHeight) {
+		      panel.style.maxHeight = null;
+		    } else {
+		      panel.style.maxHeight = panel.scrollHeight + "px";
+		    } 
+		  });
+		}
+		</script>
+
+	
+</body>
+</html>

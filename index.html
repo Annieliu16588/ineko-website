@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--讓介面能使用中文-->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <!--acoordion標籤-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
+  <title>Ineko | 貓貓迷因 (ฅ'ω'ฅ)</title>
+
+  <!-- CSS link放在head中  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amaranth&display=swap" rel="stylesheet">
+    <!--Include Animate CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!--Include Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <!--Include Materialize CSS-->
+    <link type="text/css" rel="stylesheet" href="./css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="./css/index.css">
+     <!-- Owl Stylesheets -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+			
+      <!--Navbar-->
+   	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   	    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+   	    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  	  <!--Import materialize.css-->
+  	     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		 
+
+	
+
+		
+	  
+	  
+
+		   
+		   
+      <!-- javascript 放在body中 -->
+	  
+	  <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+	  <script type='text/javascript'> 
+	    	  // 於Google Spreadsheet建立的範例資料為 https://docs.google.com/spreadsheets/d/e/2PACX-1vR9LivzlVjV3Mp9EOw0rCh46tDacBY6uQ8AT4k6ObLecvL8P-BpgKza9IOyGfFkP3tEdNSereSt8wxT/pubhtml
+	    	  var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1WV74TFqtcYzkZqUcImd2PQ49bu3UOXwJRI0r5govVjo/pubhtml';
+
+  
+
+	  </script>
+	  
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+	  
+	    <!--jQuery-->
+	    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+	    <!--JavaScript at end of body for optimized loading-->
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		
+		<!--傳遞參數-->
+		
+		<script type="text/javascript">
+
+		  $(document).ready(function(){
+		    $('.sidenav').sidenav();
+		  });
+  
+		  function ShowAnswer(){
+		      document.getElementById("AnswerBox").innerHTML=top;
+		  }
+		  
+  		function GetUrlVar(VarName) 
+  		{
+  		  name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+  		  var regexS = "[\\?&]" + VarName + "=([^&#]*)";
+  		  var regex = new RegExp(regexS);
+  		  var results = regex.exec(window.location.href);
+  		  if (results == null)
+  		   	 return "";
+  		  else
+  			 return results[1];
+  		}
+		</script>
+		
+		<script type="text/javascript">
+		$(function() {
+		    /* 按下GoTop按鈕時的事件 */
+		    $('#gotop').click(function(){
+		        $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
+		        return false;
+		    });
+    
+		    /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+		    $(window).scroll(function() {
+		        if ( $(this).scrollTop() > 400){
+		            $('#gotop').fadeIn();
+		        } else {
+		            $('#gotop').fadeOut();
+		        }
+		    });
+		});
+		</script>
+		
+		
+		
+		  <!-- JS  & JQ -->
+		<script>
+			＄(document).addEventListener('DOMContentLoaded', function() {
+			    var elems = document.querySelectorAll('.sidenav');
+			    var instances = M.Sidenav.init(elems, options);
+			  });
+	
+			$(document).ready(function(){
+			  $('.sidenav').sidenav({
+			    // 側邊導覽列從右邊展開
+			    edge: 'right',
+			    // 側邊導覽列打開時，頁面仍可滑動
+			    preventScrolling: false
+			  })
+			})
+	
+		  $(document).ready(function(){
+			  $('.slider').slider({
+			    // 不顯示操控圓鈕
+			    indicators: false,
+			    // 每張照片播五秒
+			    interval: 5000
+			  })      
+	  
+		  })
+		  
+		  $(document).ready(function() {
+		      var owl = $('.owl-carousel');
+		      owl.owlCarousel({
+		     items: 4,
+		     loop: true,
+		     margin: 10,
+		     autoplay: true,
+		     autoplayTimeout: 1000,
+		     autoplayHoverPause: true
+		      });
+		    })
+			
+			
+  
+			<script type="text/javascript">
+	
+
+
+			  $(document).ready(function(){
+			    $('.sidenav').sidenav();
+			  });
+      
+			  function ShowAnswer(){
+			      document.getElementById("AnswerBox").innerHTML=top;
+			  }
+			  
+
+
+			  
+		   </script>
+		
+	
+    <!--css style-->
+	
+	<style>
+		
+		
+	.button {
+      background-color:black;
+      border-color:black;
+	  color:white;
+	}
+	
+	.circle--square{
+		width:150px;
+		height:150px;
+	    border-radius:50%;
+	}
+	
+	
+	/*加入影片用的拉～～*/
+	.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+	}
+	.video-container iframe, .video-container object, .video-container embed {
+	position: absolute;
+	top: 0;left: 0;
+	width: 100%;
+	height: 100%;}
+	
+	/*製作自己的迷因貓貓簡易版*/
+	* {
+	  box-sizing: border-box;
+	}
+
+	.meme {
+	  margin: auto;
+	  width: 300px;
+	  height: 300px;
+	  background-image: url('http://vignette1.wikia.nocookie.net/meme/images/7/71/BusinessCat2.jpg');
+	  background-size: 100%; 
+	  text-align: center;
+	  position: relative;
+	}
+
+	p {
+	  position: absolute; 
+	  left: 0;
+	  right: 0; 
+	  margin: 15px 0;
+	  padding: 0 5px;
+	  font-family: impact;
+	  font-size: 2.5em;
+	  text-transform: uppercase;
+	  color: white;
+	  letter-spacing: 1px;
+	  text-shadow:2px 2px 0 #000,
+	  -2px -2px 0 #000,
+	  2px -2px 0 #000,
+	  -2px 2px 0 #000,
+	  0px 2px 0 #000,
+	  2px 0px 0 #000,
+	  0px -2px 0 #000,
+	  -2px 0px 0 #000,
+	  2px 2px 5px #000;
+	}
+
+	.bottom {
+	   bottom: 0;
+	 }
+
+	.top {
+	   top: 0;
+	 }
+	
+	 /*自動隱藏超出長寬的圖片*/
+	 .post  {
+	 overflow: hidden;
+	 height:160px;
+
+	 }
+
+	 /*轉場的時間*/
+	 .post img {
+	 transition: all 0.5s ease 0s;
+	 }
+
+	 /*判斷滑鼠的動作放大圖片還有增加透明度*/
+	 .post img:hover {
+	 -moz-transform: scale(1.05);
+	 -ms-transform: scale(1.05);
+	 -o-transform: scale(1.05);
+	 -webkit-transform: scale(1.05);
+	 transform: scale(1.05);
+	 opacity: .5;
+	 }
+	 
+	 #gotop {
+	     position:fixed;
+	     z-index:90;
+	     right:30px;
+	     bottom:31px;
+	     display:none;
+	     width:50px;
+	     height:50px;
+	     color:#fff;
+	     background:#000;
+	     line-height:50px;
+	     border-radius:50%;
+	     transition:all 0.5s;
+	     text-align: center;
+	     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+	 }
+	 #gotop :hover{
+	     background:#0099CC;
+	 }
+	 
+	 </style>
+
+</head>
+<body> 
+	
+	  <!--真正navbar--->  
+
+<nav class="white navbar navbar-inverse navbar-scroll">
+	  <div class="nav-wrapper container">
+          <a href="index.html" class="left sidenav-trigger show-on-medium-and-up brand-logo">
+            <img src="https://i.imgur.com/FG7CqYb.png" alt="Ineko's logo" class="responsive-img">
+          </a>	
+      <a href="#" class="right sidenav-trigger show-on-medium-and-up" data-target="side-nav"><i class="material-icons">menu</i>
+    </div>
+    </nav>
+	
+
+
+    <!--Instruction Arrow-->
+  <a href="#about" id="arrow" class="animated bounce infinite slow"></a>
+  </header>
+  
+  <!--Side Nav-->
+  <ul class="sidenav grey lighten-1" id="side-nav">
+    <li id="side-nav-logo">
+      <img src="https://i.imgur.com/FG7CqYb.png" alt="Ineko's logo">
+    </li>
+    <li><a class="sidenav-close grey-text text-darken-3 waves-effect" href="#home">Home</a></li>
+    <li><a class="sidenav-close grey-text text-darken-3 waves-effect" href="#about&aboutus">About & Us</a></li>
+    <li><a class="sidenav-close grey-text text-darken-3 waves-effect" href="#aboutmeme">About meme</a></li>
+    <li><a class="sidenav-close grey-text text-darken-3 waves-effect" href="#faq">FAQ</a></li>
+    <li><a class="sidenav-close grey-text text-darken-3 waves-effect" href="#timeline">Timeline</a></li>
+		<li><a class="sidenav-close grey-text text-darken-3 waves-effect" href="#yourmemecat">製作專屬的貓貓迷因</a></li>
+    <li><a class="sidenav-close grey-text text-darken-3 waves-effect" href="#contact">Contact</a></li>
+
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a class="subheader">按讚打卡分享專區</a></li>
+    <div id="side-nav-icons-container">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com" class="grey-text text-darken-3" target="_blank"><i class="fab fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://twitter.com" class="grey-text text-darken-3" target="_blank"><i class="fab fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://www.instagram.com/?hl=zh-tw" class="grey-text text-darken-3" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </ul>
+
+  
+  
+    <!--Instruction Arrow-->
+    <a href="#about" id="arrow" class="animated bounce infinite slow"></a>
+  </header>
+  
+  <a href="https://www.blogger.com/blogger.g?blogID=2031514508322140995#" id="gotop">
+     <i class="fa fa-angle-up"></i>
+  </a>
+  
+  
+  
+  
+  
+  <div id="index-banner" class="parallax-container">
+  <div class="parallax-container valign-wrapper">
+    <div class="container" style="background-color:white;opacity:0.5">
+      <br><br>
+      <h1 class="header center black-text text-lighten-2">Ineko | 貓貓迷因</h1>
+      <div class="row center" style="background-color:white;opacity:0.5;">
+		<h1></h1>
+		<h1></h1>
+		<h1></h1>
+		<h1></h1>
+		<h5><a class="sidenav-close grey-text text-darken-3 waves-effect" href="#aboutmeme" id="download-button" class="waves-effect waves-teal btn-flat black-text text-blcak">點擊 了解什麼是 迷因(meme)</a><h5>
+        <h6 class="header col s12 light black-text"><font face="fantasy"> © 2019 Ineko | catmeme. </font><br></h6>
+	  <h6 class="header col s12 light black-text"><font face="fantasy"> All rights reserved.</font><br></h6>
+      </div>
+      <div class="row center">
+		  
+ 
+		</div>
+      <br><br>
+      </div>
+    </div>
+	<div class="parallax"><img src="https://i.imgur.com/Soepl1t.jpg" alt="Unsplashed background img 1"></div>	
+  </div>
+  
+  
+  <div class="container">
+    <div class="section">
+  <!--About us Section-->
+        <div class="row">
+  <section class="section grey lighten-5 section-about grey-text text-darken-2 scrollspy" id="about&aboutus">
+    <div class="container center">
+	  <h3>About</h3>
+	 <font size="3" face="fantasy">
+		 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		 這裡是以貓貓迷因爲主題網站，
+		 偶爾加入meme科普文還有一些相關的東東。
+		 身為normie，
+		 秉持著「這個不能只有我看到」的心推廣迷因文化，然後貓貓真的很可愛，
+		 希望世界透過 meme 可以找到一些知識和歡笑。
+		 一起探索貓貓迷因的世界吧！
+      </h5></font></h5>
+      <div class="row center" style="background-color:white;opacity:0.5;">
+        <h5 class="header col s12 light black-text"><font size="2" face="fantasy">    （純屬娛樂。）</font></h5></div>
+	  
+	  <div class ="row" id="demo">
+		  
+      <h4>About US</h4>
+	 
+		  
+ <script>
+
+ var cats = [
+ 'images/memecat.jpg',
+ 'images/memecat2.jpg',
+ 'images/memecat3.jpg'];
+ 
+    var i;
+    for (i = 0; i < cats.length; i++) {
+     document.getElementById("demo").innerHTML += '<div class="col s12 m4">'+
+             ' <div class="post">'+
+		     '<a href="index.html?i='+ i +'#about&aboutus">'+
+             '    <img class="circle--square" style="border:2px #ccc solid;padding:5px;" src="'+cats[i]+'"></a>'+
+             '&nbsp;&nbsp;&nbsp;&nbsp;'+
+             '</div>';
+    }
+ </script>
+	
+		 
+		 <!--id是 a 導入 getElementById("a")-->
+		 <div id='a'>
+			 
+            <font size="3" face="fantasy">
+   			 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+   		 一隻討厭吃菜的貓、一隻有禮貌到讓原本不同意房客養貓的房東改變主意的貓&
+   		 </font></h5>
+		 
+   		  <h5 class="grey-text text-darken-1" font size="3" face="fantasy">
+   		 一隻替我為期末考到了而感到悲傷的貓的黃金組合。
+   		 </font></h5>
+		 
+		 </div>
+		 
+		 
+		 
+	 		 <script>
+	 		     var X = decodeURIComponent(GetUrlVar('i'));
+
+			 
+	 	     	  function init() {
+	 	     		Tabletop.init( { key: publicSpreadsheetUrl,
+	 	     						 callback: showInfo,
+	 	     						 simpleSheet: true } )
+	 	     	  }
+
+	 	     	  function showInfo(data, tabletop) {
+	 	     		console.log(data);
+						
+	 			 var str="";
+		 
+	 			str = data[X].title;
+
+	 		document.getElementById("a").innerHTML = str;
+	 	  
+		  }
+
+	 	  window.addEventListener('DOMContentLoaded', init)
+	  
+	 	</script>
+		  
+		  
+		  
+		 
+	     <div class="row center" style="background-color:white;opacity:0.5;">
+	       <h5 class="header col s12 light black-text"><font size="2" face="fantasy"> © 2019 Ineko | catmeme ( 雖然有三隻貓但其實只有一個人 Directed by Robert B. Weide) ＆ 培養迷因. All rights reserved. </font><br></h5></div>
+		 
+		 
+
+		  
+      </h5></font>
+      <div class="row center">
+        <!--Blog Post Be Placed Here-->
+		
+      </div>
+    </div>
+  </section>
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+<section class="section-skills parallax-container scrollspy" id="aboutmeme">
+	
+ <div id="index-banner" class="parallax-container">
+ <div class="parallax-container valign-wrapper">
+   <div class="container" style="background-color:white;opacity:0.5;hieht:600px;width:1240px">
+	 <h5> </h5>
+     <h1 class="header center black-text text-lighten-2">What's a meme?</h1>
+	 <h5 class="header center black-text text-lighten-2"><font size="3" face="fantasy">	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;迷因所指的可能是有趣的東西（如加上字幕的圖片或影片）或一個在網路上（特別是社交媒體上）被廣泛轉載的東西。」這個聽起來比較接近一般公認meme的意思。meme必須「有趣」；再來，它必須在「網路或社交媒體」被「瘋狂轉載」。我們可以說meme就是在網路上的「爆紅事物」，仔細看看維基百科的「網路爆紅列表」，可以看見許多熟悉的meme名列其中，像下面影片中的 彩虹貓、比利．海靈頓 或 咕嚕靈波（○´∀｀）ノ♡。</h5></font></h5>
+<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="250" height="150" type="text/html" src="https://www.youtube.com/embed/QH2-TGUlwu4?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"><div><small><a href="https://youtubeembedcode.com/es/">youtubeembedcode.com/es/</a></small></div><div><small><a href="http://add-link-exchange.com">w://add-link-exchange.com</a></small></div><div><small><a href="https://youtubeembedcode.com/nl/">youtubeembedcode.com/nl/</a></small></div><div><small><a href="http://add-link-exchange.com">add-link-Exchange</a></small></div><div><small><a href="https://youtubeembedcode.com/pl/">youtubeembedcode pl</a></small></div><div><small><a href="http://add-link-exchange.com">addlink-exchange</a></small></div></iframe>
+     <div class="row center" style="background-color:white;opacity:0.5;">
+       <h5 class="header col s12 light black-text"><font size="2" face="fantasy"> © 2019 Ineko | catmeme ＆ Nyan Cat(彩虹貓) & youtube </font></h5>.All rights reserved. </font><br></h5>
+
+     </div>
+     <div class="row center">
+	  
+  
+     </div>
+     <br><br>
+     </div>
+      </div>
+      <div class="parallax">
+        <img src="./img/parallax/san-francisco-city-view.jpeg" alt="City view of San Francisco">
+      </div>
+    </div>
+  </section>
+		
+		  
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="https://i.imgur.com/iQ4QVIe.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+  
+  
+ <!--Contact Section-->
+ <!--getform-->
+ <div class="container">
+	 <div class="row">
+ <section class="section experience grey lighten-5 section-contact grey-text text-darken-2 scrollspy" id="faq">
+	 
+   <div class="container center">
+     <h3> F A Q 🔍</h3>
+     <h6>以下能快速解決，您可能會好奇的問題 ( 點擊後展開 )</h6>
+	 
+	 
+	 
+	 
+	 
+	<div class="col s12 m4">
+    <div class="card">
+    <div class="card-content">
+	    <div class="card-content grey lighten-4">
+	      <div id="qcard">問題一、這裡是做什麼用的？</div>
+	    </div>
+      <div>我的期末作業，想做喜歡的東西。</div>
+    </div>
+    <div class="card-tabs">
+      <ul class="tabs tabs-fixed-width">
+      </ul>
+    </div>
+</div>
+  </div>
+  	<div class="col s12 m4">
+      <div class="card">
+      <div class="card-content">
+  	    <div class="card-content grey lighten-4">
+  	      <div id="qcard">問題二、多久會更新？</div>
+  	    </div>
+        <div>大概是永久不會再更新的。</div>
+      </div>
+      <div class="card-tabs">
+        <ul class="tabs tabs-fixed-width">
+        </ul>
+      </div>
+	
+  </div>
+    </div>
+	
+		<div class="col s12 m4">
+	    <div class="card">
+	    <div class="card-content">
+		    <div class="card-content grey lighten-4">
+		      <div id="qcard">問題三、可以投稿嗎？</div>
+		    </div>
+	      <div>可以請使用最下方的聯繫功能。</div>
+	    </div>
+	    <div class="card-tabs">
+	      <ul class="tabs tabs-fixed-width">
+	      </ul>
+	    </div>
+	
+	</div>
+	  </div>
+  
+  
+</div>
+
+</div>
+<div>
+
+
+ </section>
+      </div>
+  </div>
+	  
+
+<!--時間軸-->
+  
+ 
+ <div class="parallax-container valign-wrapper">
+   <div class="section no-pad-bot">
+   <div class="container" style="background-color:white;opacity:0.55;width:1240px">
+       <div class="row center">  
+		   <section class="section grey lighten-5 section-about grey-text text-darken-2 scrollspy" id="timeline">
+
+<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1sxHhw8MK9c5N55CZIzA7Rti_6ikix8gz3VjKThnZ6uQ&font=Default&lang=en&initial_zoom=2&height=500' width='100%' height='500' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+		
+       </div>
+     </div>
+   </div>
+   <div class="parallax"><img src="https://i.imgur.com/aGpFETB.jpg" alt="Unsplashed background img 4"></div>
+ </div>
+
+  
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+			 <section class="section experience grey lighten-5 section-contact grey-text text-darken-2 scrollspy" style="width:600px;height:465px;" id="yourmemecat">
+			<div class="meme">
+			  <p class="top">製作專屬自己的</p>
+			  <p class="bottom">貓貓迷因</p>
+
+			</div>
+		  <h5></h5>
+		  
+		  <a href="memegenetatortest.html" target="_blank" id="download-button" class="waves-effect waves-teal btn-flat black-text text-blcak">點我製作</a>
+
+        </div>
+      </div>
+    </div>
+	
+
+ 
+  
+  
+  <!--Contact Section-->
+  <!--getform-->
+  <div class="container"style="width:1240px">
+  <section class="section experience grey lighten-5 section-contact grey-text text-darken-2 scrollspy" id="contact">
+    <div class="container center">
+      <h3>Contact </h3>
+      <h6>留下您的聯絡方式，當您對於我有任何建議</h6>
+      <div class="row">
+        <form class="col s12 xl10 offset-xl1" action="https://getform.io/f/d4db8e20-5583-45a8-b0b9-b1c1374ed552"
+          method="POST">
+          <div class="row">
+            <div class="input-field col s12 m6">
+              <i class="material-icons prefix">account_circle</i>
+              <input type="text" class="validate" id="name" required>
+              <label for="name">Name</label>
+              <span class="helper-text" data-error="Kindly provide your name"></span>
+            </div>
+            <div class="input-field col s12 m6">
+              <i class="material-icons prefix">email</i>
+              <input type="email" name="email" class="validate" id="email" required>
+              <label for="email">Email</label>
+              <span class="helper-text" data-error="Kindly provide your email"></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">message</i>
+              <textarea name="message" id="message" class="materialize-textarea validate" required></textarea>
+              <label for="message">Leave a message</label>
+              <span class="helper-text" data-error="Kindly leave a message"></span>
+            </div>
+          </div>
+          <div class="row center">
+            <button class="btn waves-effect waves-light blue-grey" type="submit" name="action">Send
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+        </div>
+  </div>
+  
+  
+<!--footer 最底部的部分-->
+  
+  <footer class="page-footer white teal">
+    <div class="white container">
+	<div class="footer-copyright">
+      <a href="http://materializecss.com/getting-started.html" id="download-button" class="waves-effect waves-teal btn-flat black-text text-blcak">© ineko網站的內容皆來自google 以及 本人修改。Directed by Materialize, CHIHAO LIU.</a>
+      <div class="row">
+        <div class="col l6 s12">
+   
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/accordion.js"></script> 
+  

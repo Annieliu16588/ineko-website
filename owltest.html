@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>貓咪迷因產生器</title>
+	  
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+
+
+    <!-- javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  </head>
+  <body>
+
+
+    <!--  Demos -->
+	<div id="demo">
+	</div>
+	
+	   <script>
+		$(document).ready(function() {
+		  var owl = $('.owl-carousel');
+		  owl.owlCarousel({
+			items: 4,
+			loop: true,
+			margin: 10,
+			autoplay: true,
+			autoplayTimeout: 1000,
+			autoplayHoverPause: true
+		  });
+		})
+				
+		
+		var images =  new Array();
+		images[0] = "http://pic.gomaji.com/img.php?type=product&id=20136&size=r";
+		images[1] = "http://pic.gomaji.com/img.php?type=product&id=20135&size=r";
+		images[2] = "http://pic.gomaji.com/img.php?type=product&id=20305&size=r" ;
+		images[3] = "http://pic.gomaji.com/img.php?type=product&id=19970&size=r" ;
+		images[4] = "http://pic.gomaji.com/img.php?type=product&id=20106&size=r" ;
+		images[5] = "http://pic.gomaji.com/img.php?type=product&id=20404&size=r" ;
+		images[6] = "http://pic.gomaji.com/img.php?type=product&id=20373&size=r" ;
+		images[7] = "http://pic.gomaji.com/img.php?type=product&id=20275&size=r" ;
+		images[8] = "http://pic.gomaji.com/img.php?type=product&id=20209&size=r";
+		images[9] = "http://pic.gomaji.com/img.php?type=product&id=20134&size=r";
+
+		str = '<div class="owl-carousel owl-theme">';
+		for (i=0 ; i<=9 ; i++)
+			{
+			str += '<div class="item">';
+			str += 	'<img src="' + images[i] + '" />';
+			str += '</div>';
+			}
+		str += '</div>';
+		document.getElementById("demo").innerHTML = str;    
+			
+		
+	  </script>
+  </body>
+</html>
